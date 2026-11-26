@@ -1,3 +1,6 @@
+# UML Class Diagram
+
+```mermaid
 classDiagram
 
     class Customer {
@@ -87,3 +90,4 @@ classDiagram
     DatabaseManager --> SQLDatabase : JDBC / SQL
 
     Customer --> CustomerType
+```
