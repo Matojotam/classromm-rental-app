@@ -66,12 +66,12 @@ WHERE date > CURRENT_DATE;
 -- JDBC Example
 
 
---String SQL = "INSERT INTO Booking (customer_id, classroom_id, date, start_time, end_time, comments) VALUES (?, ?, ?, ?, ?, ?)";
---PreparedStatement stmt = connection.prepareStatement(sql);
---stmt.setInt(1, booking.getCustomerId());
---stmt.setInt(2, booking.getClassroomId());
---stmt.setDate(3, Date.valueOf(booking.getDate()));
---stmt.setTime(4, Time.valueOf(booking.getStartTime()));
---stmt.setTime(5, Time.valueOf(booking.getEndTime()));
---stmt.setString(6, booking.getComments());
---stmt.executeUpdate();
+String SQL = "INSERT INTO Booking (customer_id, classroom_id, date, start_time, end_time, comments) VALUES (?, ?, ?, ?, ?, ?)";
+PreparedStatement stmt = connection.prepareStatement(sql);
+stmt.setInt(1, booking.getCustomerId());
+stmt.setInt(2, booking.getClassroomId());
+stmt.setDate(3, Date.valueOf(booking.getDate()));
+stmt.setTime(4, Time.valueOf(booking.getStartTime()));
+stmt.setTime(5, Time.valueOf(booking.getEndTime()));
+stmt.setString(6, booking.getComments());
+stmt.executeUpdate();
